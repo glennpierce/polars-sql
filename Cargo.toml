@@ -1,0 +1,28 @@
+[package]
+name = "polars-sql"
+version = "0.1.0"
+authors = ["Glenn Pierce <glenn.pierce@carnegosystems.com>"]
+edition = "2021"
+
+[dependencies]
+arrow2 = { version = "0.17.0", features = ["full"] }
+futures = "*"
+indoc = "1.0"
+tokio = { version = "1.1.0", features = ["full"] }
+lazy_static = "1.2.0"
+chrono = { version = "0.4", features = ["serde"] }
+time = "0.1.37"
+serde = "1.0.27"
+serde_derive = "1.0.27"
+serde_json = "*"
+log = "0.4.11"
+itertools = "*"
+crossbeam-channel = "*"
+dtparse = "*"
+postgres-types = { version = "0.2.1", features = ["derive", "with-chrono-0_4", "with-serde_json-1"] }
+postgres_array = "*"
+tokio-postgres = { version = "0.7.0", features = ["with-chrono-0_4", "with-serde_json-1"] }
+polars-core = "0.28.0"
+polars = { version = "0.28.0", features = ["timezones", "csv-file", "fmt", "describe", "temporal", "dtype-date", "dtype-datetime", "lazy", "interpolate", "dynamic_groupby", "diff", "rows"] }
+
+
